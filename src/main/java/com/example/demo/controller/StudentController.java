@@ -6,5 +6,8 @@ import org.springframework.web.blind.annotation.RestController;
 public class StudentController{
     @Autowired StudentService ser;
     @postMapping("/post")
+    public StudentEntity senddata(@RequestBody StudentEntity student){
+        return ser.postData(student);
+    }
 
 }
