@@ -2,11 +2,12 @@ package com.example.demo.entity
 
 @Entity
 public class StudentEntity{
+     private Integer id;
     private String name;
-    private Integer id;
+   
     private String email;
     private String password;
-    private Date dob;
+
     public String getName(){
         return name;
     }
@@ -17,6 +18,18 @@ public class StudentEntity{
         return id;
     }
     public void setId(){
-        this.name=name;
+        this.id=id;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public void setEmail(){
+        this.email=email;
+    }
+    public String getPassword(){
+        return password;
+    }
+    public void setPassword(){
+        this.password=password;
     }
 }
