@@ -9,8 +9,8 @@ import com.example.demo.service.StudentService;
 public class StudentController{
     @Autowired StudentService ser;
     @PostMapping("/post")
-    public StudentEntity senddata(@RequestBody StudentEntity student){
-        return ser.postData(student);
+    public StudentEntity senddata(@RequestBody StudentEntity stu){
+        return ser.postData(stu);
     }
 
 }
