@@ -34,10 +34,15 @@ public class StudentEntity{
     public void setPassword(String password){
         this.password=password;
     }
+
     public Date getCreated(){
         return created;
     }
-    public void setCreated(){
+    public void setCreated(Date created){
         this.created=created;
+    }
+    public StudentEntity(Integer id,String name,String email,String password,Date created){
+        this.id=id;
+        this.name=name
     }
 }
