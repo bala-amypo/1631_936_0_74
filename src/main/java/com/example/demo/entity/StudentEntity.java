@@ -7,4 +7,16 @@ public class StudentEntity{
     private String email;
     private String password;
     private Date dob;
+    public String getName(){
+        return name;
+    }
+    public void setName(){
+        this.name=name;
+    }
+    public Integer getId(){
+        return id;
+    }
+    public void setId(){
+        this.name=name;
+    }
 }
