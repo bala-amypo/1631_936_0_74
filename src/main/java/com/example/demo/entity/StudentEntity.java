@@ -6,4 +6,5 @@ public class StudentEntity{
     private Integer id;
     private String email;
     private String password;
+    private Date dob;
 }
