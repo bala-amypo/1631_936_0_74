@@ -12,6 +12,6 @@ public class ValidationServiceImpl implements ValidationService{
     @Autowired ValidationRepository validate;
     @Override
     public ValidationEntity postData(ValidationEntity valid){
-        
+        return validate.save(valid);
     }
 }
