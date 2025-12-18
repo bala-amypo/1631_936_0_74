@@ -25,4 +25,7 @@ public class StudentServiceImpl implements StudentService{
         return "delete successfully";
 
     }
+    public List<StudentEntity>getdata(){
+        return student.findById();
+    }
 }
