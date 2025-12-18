@@ -29,5 +29,5 @@ public class StudentController{
     public StudentEntity getidval(@PathVariable int id){
         return ser.getData(id);
     }
-
+    @
 }
