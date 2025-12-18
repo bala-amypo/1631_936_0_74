@@ -25,5 +25,9 @@ public class StudentController{
         return ser.DeleteData(id);
 
     }
+    @GetMapping("/gett/{id}")
+    public StudentEntity getidval(){
+        return ser.getData(id);
+    }
 
 }
