@@ -27,7 +27,7 @@ public class StudentServiceImpl implements StudentService{
     }
    @Override
    public StudentEntity getData(int id){
-        return student.findById(id).orElse(null);
+        return student..orElse(null);
 
    }
    @Override
