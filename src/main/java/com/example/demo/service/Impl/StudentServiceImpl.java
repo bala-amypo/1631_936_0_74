@@ -18,4 +18,10 @@ public class StudentServiceImpl implements StudentService{
     public List<StudentEntity>getAlldata(){
         return student.findAll();
     }  
+    @Override
+    public String DeleteData(@PathVariable int id){
+        student.deleteById(id);
+        return "delete successfully";
+
+    }
 }
