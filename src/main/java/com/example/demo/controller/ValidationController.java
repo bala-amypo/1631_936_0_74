@@ -8,7 +8,7 @@ import com.example.demo.service.ValidationService;
 @RestController
 public class ValidationController{
     @Autowired ValidationService ser;
-    @PostMapping("/post_val")
+    @PostMapping("/post_validation")
     public ValidationEntity senddata(@RequestBody ValidationEntity valid){
         return ser.postData(valid);
     }
