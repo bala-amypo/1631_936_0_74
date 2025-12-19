@@ -5,10 +5,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
 @RestController
 public class GlobalException{
-    
+
     @ExceptionHandler(ValidationException.class)
     public ResponseEntity<string>handleValidationException(ValidationException ex){
-        return new ResponseEntity<string>(ex.getMessage(),HttpStatus.BAD_GATEWAY);
+        return new ResponseEntity<String>(ex.getMessage(),HttpStatus.BAD_GATEWAY);
 
     }
 }
