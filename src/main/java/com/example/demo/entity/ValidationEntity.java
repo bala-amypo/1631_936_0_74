@@ -9,6 +9,10 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+
 @Entity
 public class ValidationEntity{
     @Id
@@ -32,7 +36,9 @@ public class ValidationEntity{
     @Positive(message="Age must be a positive number")
     private int age;
 
-
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
     // public Long getId(){
     //     return id;
     // }
