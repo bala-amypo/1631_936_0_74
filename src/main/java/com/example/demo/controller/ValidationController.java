@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import jakarta.validation.Valid;
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
+import org.springframework.web.bind.annotation.PathVariable;
 @RestController
 public class ValidationController{
     @Autowired ValidationService ser;
