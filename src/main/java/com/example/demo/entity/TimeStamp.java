@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.
+import jakarta.persistence.PrePersist;
 @Entity
 @Data
 @AllArgsConstructor
@@ -21,4 +21,12 @@ public class TimeStamp{
     private String email;
     private  LocalDateTime createdAt;
     private  LocalDateTime updatedAt;
+    @PrePersist
+    public void Oncreate(){
+        LocalDateTime now=new LocalDateTime();
+        this.createdAt=now;
+        this.updatedAt=now;
+    }
+
+
 }
