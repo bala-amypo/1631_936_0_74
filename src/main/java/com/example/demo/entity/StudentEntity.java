@@ -1,7 +1,7 @@
 package com.example.demo.entity;
 
 import java.util.Date;
-
+import lombok.Data;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
@@ -15,7 +15,9 @@ public class StudentEntity{
     private String email;
     private String password;
     private Date created;
-    
+    @Data
+    @AllArgsConstructor
+
 
 
 
