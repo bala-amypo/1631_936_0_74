@@ -4,4 +4,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @RestController
 public class GlobalException{
     @ExceptionHandler(ValidationException.class)
+    public ResponseBody<string>handleValidationException(ValidationException ex){
+        
+
+    }
 }
