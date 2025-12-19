@@ -1,7 +1,7 @@
 package com.example.demo.exception;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseEntity;
+import org.springframework.web.bind.annotation.http.ResponseEntity;
 @RestController
 public class GlobalException{
     @ExceptionHandler(ValidationException.class)
