@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.TimeStamp;
-public interface TimeStampService{
-    TimeStamp postData(TimeStamp time);
+import com.example.demo.entity.StudentIdCard;
+public interface StudentIdCardService{
+    StudentIdCardEntity postData(StudentIdCard time);
     
 }
