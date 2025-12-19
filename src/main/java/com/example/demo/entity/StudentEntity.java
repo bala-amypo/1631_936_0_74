@@ -22,9 +22,7 @@ public class StudentEntity{
     private String email;
     private String password;
     private Date created;
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
+    
 
 
 
