@@ -17,7 +17,8 @@ public class StudentIdCardEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private Long idcardno;
-    
+    @OneToOne
+    private StudentDetailsEntity student;
 
     
     }
