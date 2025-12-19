@@ -14,6 +14,10 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+    
 public class ValidationEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -36,10 +40,7 @@ public class ValidationEntity{
     @Positive(message="Age must be a positive number")
     private int age;
 
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    }
+    
     // public Long getId(){
     //     return id;
     // }
@@ -89,4 +90,4 @@ public class ValidationEntity{
 
     // }
 
-    
+}
