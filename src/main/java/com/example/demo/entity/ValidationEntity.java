@@ -39,6 +39,7 @@ public class ValidationEntity{
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
+    }
     // public Long getId(){
     //     return id;
     // }
@@ -87,5 +88,5 @@ public class ValidationEntity{
     // public ValidationEntity(){
 
     // }
-}
+
     
