@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.entity.StudentIdCard;
+import com.example.demo.entity.StudentIdCardEntity;
 public interface StudentIdCardService{
-    StudentIdCardEntity postData(StudentIdCard time);
+    StudentIdCardEntity postData(StudentIdCardEntity stu);
     
 }
