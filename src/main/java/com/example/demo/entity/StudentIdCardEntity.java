@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 @Entity
@@ -18,6 +20,7 @@ public class StudentIdCardEntity{
     private Long id;
     private Long idcardno;
     @OneToOne
+    @JoinColumn(name="Student_id")
     private StudentDetailsEntity student;
 
     
